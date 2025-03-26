@@ -70,3 +70,35 @@ body {
     border: 1px solid var(--alloy-orange);
     display: none;
 }
+.featured {
+    max-width: 80vw;
+    margin: auto;
+}
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+.card {
+    border: 1px solid var(--isabelline);
+    background-color: var(--isabelline);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-image {
+    max-width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border: 1px solid var(--black);
+}
+.card-content {
+    padding: 15px;
+}
+.card-button {
+    display: block;
+    padding: 12px;
+    background-color: var(--black);
+    color: var(--isabelline);
+    text-align: center;
+    text-decoration: none;
+}
