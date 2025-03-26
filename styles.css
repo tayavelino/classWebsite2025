@@ -62,3 +62,11 @@ body {
 .main-navigation a:hover {
     background-color: var(--alloy-orange);
 }
+
+.menu-button {
+    font-size: 24px;
+    background-color: transparent;
+    color: var(--alloy-orange);
+    border: 1px solid var(--alloy-orange);
+    display: none;
+}

@@ -4,12 +4,14 @@
 <head>
     <!-- head is for metadata -->
     <!-- title is the name of the document  -->
-    <title>Hello World</title>
+    <title>Progear Hub</title>
     <!-- icon for page -->
     <link rel="icon" href="icon-transparent.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -17,6 +19,9 @@
         <a href="index.html">
             <img class="logo" src="images/PGHlogo.png">
         </a>
+        <button type="button" class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <form id="search">
             <input type="search" name="search" placeholder="type your search">
             <button type="submit" name="search-button">
@@ -25,7 +30,7 @@
         </form>
         <nav class="main-navigation">
             <a href="index.html">
-                <i class="fa-solid fa-house"></i>
+                <!-- <i class="fa-solid fa-house"></i> -->
                 Home
             </a>
             <a href="products.html">Products</a>
