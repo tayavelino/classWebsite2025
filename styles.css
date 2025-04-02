@@ -9,6 +9,7 @@
 body {
     background-color: var(--air-superiority-blue);
     margin: 0px;
+    font-family: "Roboto", sans-serif;
 }
 
 .logo {
@@ -23,6 +24,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     flex-wrap: wrap;
+    font-family: Silkscreen, sans-serif;
 }
 
 #search {
@@ -101,4 +103,48 @@ body {
     color: var(--isabelline);
     text-align: center;
     text-decoration: none;
+}
+.main-footer {
+    margin-top: 2em;
+    padding: 1em;
+    min-height: 150px;
+    background-color: var(--alloy-orange);
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+.social a {
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--isabelline)
+}
+.copyright {
+    text-align: center;
+    color: var(--isabelline);
+}
+
+.contact {
+    max-width: 80vw;
+    margin: auto;
+}
+#map {
+    width: 100%;
+}
+#contact-form {
+    width: 50%;
+    margin: auto;
+}
+#contact-form label {
+    display: block;
+}
+#contact-form input {
+    display: block;
+    width: 100%;
+}
+#contact-form textarea {
+    display: block;
+    width: 100%;
 }
