@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us - ProGear Hub</title>
+    <link rel="icon" href="icon-transparent.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <style>
+        .about {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .about h1 {
+            font-family: 'Silkscreen', sans-serif;
+            font-size: 2em;
+            color: var(--yellow-green);
+            margin-bottom: 20px;
+        }
+        .about img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>About us</h1>
+    <header class="main-header">
+        <a href="index.html">
+            <img class="logo" src="images/PROGEARHUB.png" alt="ProGear Hub Logo">
+        </a>
+        <button type="button" class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <form id="search">
+            <input type="search" name="search" placeholder="type your search">
+            <button type="submit" name="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <nav class="main-navigation">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+<img src="images/unisex-sports-jersey-neon-yellow-front-66b399aece2be.webp" alt="ProGear Team Member">
+
+            <h1>About ProGear Hub</h1>
+            <p>
+                At <strong>ProGear Hub</strong>, we believe that sports are more than just games — they’re a lifestyle.
+                Founded with the passion to empower athletes at every level, our mission is to provide
+                high-quality gear that inspires performance and confidence.
+            </p>
+            <p>
+                Whether you're training for your next marathon, hitting the gym, or gearing up for a local match,
+                we’re here to support your journey. With a curated selection of sportswear, shoes, and accessories,
+                we bring you the best brands and the latest trends in athletic gear.
+            </p>
+            <p>
+                Join our community of fitness enthusiasts and elevate your game with ProGear Hub — where passion meets performance.
+            </p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <nav class="social">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+        </nav>
+        <p class="copyright">&copy; ProGear Hub 2025. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
