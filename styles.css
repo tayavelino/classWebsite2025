@@ -78,22 +78,15 @@ body {
 
 /* Main Promo Banner */
 .main-banner {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
     display: block;
-    margin: 0 auto;
-    width: 1000%;
-    max-width: 1000px;
-    max-height: 300px;
     object-fit: cover;
-    border-radius: 100px;
+    margin: 2em auto;
+    border-radius: 0;
 }
-.banner-card {
-    border: 2px solid var(--chartreuse);
-    background-color: var(--white);
-    border-radius: 10px;
-    padding: 0px;
-    max-width: 1000px;
-    margin: 0 auto 0em;
-}
+
 
 /* Featured Section */
 .featured {
@@ -244,12 +237,15 @@ body {
     }
 
     .banner-card {
-    border: 2px solid var(--chartreuse);
-    background-color: var(--white);
-    border-radius: 12px;
-    padding: 10px;
-    max-width: 1000px;
-    margin: 0 auto 3em;
-}
-
-}
+        border: 2px solid var(--chartreuse);
+        background-color: var(--white);
+        border-radius: 20px;
+        padding: 0;
+        max-width: 720px;
+        margin: 0 auto 2em;
+        overflow: hidden;
+    }
+    
+    
+    }
+    
