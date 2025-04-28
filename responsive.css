@@ -36,3 +36,18 @@
         width: 95vw;
     }
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .collections-container,
+    .sports-categories,
+    .blog-resources {
+        flex-direction: column;
+    }
+    
+    .collection-card,
+    .sport-card,
+    .blog-card {
+        margin-bottom: 15px;
+    }
+}

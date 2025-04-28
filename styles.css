@@ -219,33 +219,173 @@ body {
     background-color: var(--chartreuse);
 }
 
-/* Responsive Menu */
-@media screen and (max-width: 600px) {
-    .menu-button {
-        display: block;
-    }
-    .main-navigation {
-        flex-direction: column;
-        display: none;
-        width: 100%;
-    }
-    .main-navigation.open {
-        display: flex;
-    }
-    .categories {
-        grid-template-columns: 1fr;
-    }
+/* Hero Banner Section */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set a fixed height for desktop view */
+    overflow: hidden;
+}
 
-    .banner-card {
-        border: 2px solid var(--chartreuse);
-        background-color: var(--white);
-        border-radius: 20px;
-        padding: 0;
-        max-width: 720px;
-        margin: 0 auto 2em;
-        overflow: hidden;
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    object-position: center; /* Ensures the image is centered */
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 600px) {
+    .hero-banner {
+        height: 250px; /* Adjust the height for mobile view */
     }
-    
-    
+    .hero-banner img {
+        object-position: top; /* Center the image to the top if it gets cropped */
     }
+}
+
+    
+/* Estilos para o novo layout da página inicial */
+.card:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para as coleções */
+.collections-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.collection-card {
+    flex: 1;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.collection-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.collection-label {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* see more */
+.see-more-btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #c4ff0e;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Bestsellers */
+.bestsellers-banner {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.bestsellers-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bestsellers-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Seção Esportes */
+.sports-categories {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.sport-card {
+    flex: 1;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sport-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sport-label {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Seção Blog */
+.blog-resources {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blog-card {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Títulos de seção */
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+}
+
+
+    
     
