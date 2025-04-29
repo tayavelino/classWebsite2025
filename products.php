@@ -1,62 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progear Hub</title>
-    <link rel="icon" type="image/webp" href="images/brat_green_v3_vshsfg.jpg">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
-    <style>
-        .card:hover {
-            transform: scale(1.03);
-            transition: transform 0.3s ease;
-        }
-        .collection-tabs a {
-            margin: 0 10px;
-            color: var(--black);
-            text-decoration: none;
-        }
-        .collection-tabs a:hover {
-            color: var(--yellow-green);
-            text-decoration: underline;
-        }
-        .footer-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1em;
-            text-align: center;
-        }
-    </style>
-</head>
+<?php
+// include head section
+include "components/head.php";
+?>
 
 <body>
-    <header class="main-header">
-        <a href="index.html">
-            <img class="logo" src="images/PROGEARHUB.png" alt="ProGear Hub Logo">
-        </a>
-        <button type="button" class="menu-button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <form id="search">
-            <input type="search" name="search" placeholder="type your search">
-            <button type="submit" name="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
-        <nav class="main-navigation">
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <?php include "components/header.php"; ?>
+    <main>
+
+<body>
+
 
     <main>
         <section class="hero-banner">

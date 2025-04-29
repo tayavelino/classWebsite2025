@@ -1,42 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+// include head section
+include "components/head.php";
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progear Hub</title>
-    <link rel="icon" type="image/webp" href="images/brat_green_v3_vshsfg.jpg">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
-   
-</head>
 
 <body>
-    <header class="main-header">
-        <a href="index.html">
-            <img class="logo" src="images/PROGEARHUB.png" alt="ProGear Hub Logo">
-        </a>
-        <button type="button" class="menu-button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <form id="search">
-            <input type="search" name="search" placeholder="type your search">
-            <button type="submit" name="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
-        <nav class="main-navigation">
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <?php include "components/header.php"; ?>
 
     <main>
         <!-- Banner Principal -->
@@ -117,21 +88,8 @@
         </section>
     </main>
 
+     <?php include "components/footer.php"; ?>
     
-    <footer class="main-footer">
-        <nav class="social">
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
-        </nav>
-        <div class="footer-links">
-            <div><strong>THE BRAND</strong><br>About Us<br>Our Mission</div>
-            <div><strong>QUICK LINKS</strong><br>Home<br>Shop<br>Contact</div>
-            <div><strong>CATEGORIES</strong><br>Men<br>Women<br>Accessories</div>
-            <div><strong>HELP & SUPPORT</strong><br>FAQs<br>Delivery Info<br>Return Policy</div>
-        </div>
-        <p style="text-align: center; font-size: 0.9em; margin-top: 1em;">&copy; 2025 ProGear Hub. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
